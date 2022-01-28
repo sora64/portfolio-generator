@@ -100,8 +100,8 @@ Add a New Project
             type: 'input',
             name: 'link',
             message: 'Enter the GitHub link to your project. (Required)',
-            validate: nameInput => {
-                if (nameInput) {
+            validate: linkInput => {
+                if (linkInput) {
                     return true;
                 } else {
                     console.log('Please enter a GitHub link to your project!');
